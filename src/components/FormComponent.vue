@@ -23,7 +23,9 @@
   <tr v-for="(item, index) in items">
     <td>{{ index }}</td>
     <td>{{ item.message }}</td>
-    <button @click.prevent="deleteData(index)" class="button is-danger">Delete</button>
+    <td>
+      <button @click.prevent="deleteData(index)" class="button is-danger">Delete</button>
+    </td>
   </tr>
 </table>
 
